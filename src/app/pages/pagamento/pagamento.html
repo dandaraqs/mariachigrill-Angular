@@ -1,0 +1,136 @@
+<main>
+
+        <section>
+
+            <h1>Forma de pagamento</h1>
+
+        </section>
+
+        <hr>
+
+        <details>
+
+    <summary>Pagamento via PIX</summary>
+
+    <p>Escaneie o QR Code abaixo:</p>
+
+    <img src="./assets/images/qrcode.png"
+         alt="QR Code para pagamento PIX"
+         width="200">
+
+    <p>Código PIX:</p>
+
+    <p>(47) 92001-4355</p>
+
+        </details>
+
+        <br>
+
+<section>
+
+    <details>
+
+        <summary>Pagamento com cartão</summary>
+
+        <p>Selecione a forma do cartão:</p>
+
+<input type="radio" id="debito" name="tipoCartao">
+
+<label for="debito">
+    Débito
+</label>
+
+<br>
+
+<input type="radio" id="credito" name="tipoCartao">
+
+<label for="credito">
+    Crédito
+</label>
+
+<br><br>
+
+        <br>
+
+        <label for="nome">
+            Nome no cartão:
+        </label>
+
+        <input type="text" id="nome" size="30">
+
+        <br><br>
+
+        <label for="numero">
+            Número do cartão:
+        </label>
+
+        <input type="text" id="numero" size="30">
+
+        <br><br>
+
+        <label for="mes">
+            Mês de validade:
+        </label>
+
+        <select id="mes">
+
+            <option>--</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="ano">
+            Ano de validade:
+        </label>
+
+        <select id="ano">
+
+            <option>--</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+            <option>2029</option>
+            <option>2030</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="cvv">
+            CVV:
+        </label>
+
+        <input type="text" id="cvv" size="5">
+
+        <br><br>
+
+    </details>
+
+</section>
+
+        <br>
+
+<a routerLink="/confirmacao">
+
+            <button>
+                Confirmar pagamento
+            </button>
+
+        </a>
+
+    </main>
+
+    <br><br>

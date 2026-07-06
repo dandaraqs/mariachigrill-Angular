@@ -1,0 +1,104 @@
+body {
+    background-color: #e9cda0;
+    background-image: url(../../../assets/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: georgia, serif;
+    padding-top: 80px; /* aumente até o conteúdo aparecer corretamente */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+nav section h2 {
+    color: #c84620;
+    font-size: 2.5rem;
+}
+
+main nav {
+    display: flex; /* quadrados um do lado do outro */
+    gap: 20px; /* espaço entre os quadrados */
+    flex-wrap: wrap; /* próxima linha se não couber tudo em uma*/
+    justify-content: center; /* centraliza os quadrados */
+    margin-top: 60px;
+}
+
+nav section {
+    border: 2px solid #00610525; 
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+/*Borda, pontas, espaço interno, largura e centralização dos quadrados*/
+
+.ImagemPrincipal {
+    width: 100%; /* largura no quadro */
+    height: 150px; /* altura */
+    object-fit: cover; /* recorta sem distorcer */
+    border-radius: 4px;
+}
+
+.DecoraçãoVerde{
+    height: 20px;     /* altura fixa */ 
+    border-radius: 4px;
+}
+
+
+
+/*Animação*/
+
+
+
+.paginaEntradas {
+    display: block;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+.paginaEntradas:hover {
+    transform: scale(1.05);
+    background-color: #ffefda;
+    opacity: 0.8;  
+}
+
+.paginaPrincipais {
+    display: block;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+.paginaPrincipais:hover {
+    transform: scale(1.05);
+    background-color: #ffefda;
+    opacity: 0.8;  
+}
+
+.paginaSobremesas {
+    display: block;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+.paginaSobremesas:hover {
+    transform: scale(1.05);
+    background-color: #ffefda;
+    opacity: 0.8;  
+}
+
+.paginaBebidas {
+    display: block;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+.paginaBebidas:hover {
+    transform: scale(1.05);
+    background-color: #ffefda; 
+    opacity: 0.8;  
+}

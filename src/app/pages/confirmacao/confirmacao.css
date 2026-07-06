@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E9CDA0;
+    font-family: Arial, sans-serif;
+    color: #4A2C24;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #C65D3B;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.headerImgResponsiva img{
+    width: 220px;
+    max-width: 100%;
+}
+
+.headerMenuNavegacao{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.headerMenuNavegacao a{
+    text-decoration: none;
+    color: #E9CDA0;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.headerMenuNavegacao a:hover{
+    color: #D9A441;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+section{
+    background-color: #FFF7EB;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    padding: 50px;
+    border-radius: 25px;
+    border: 4px solid #D9A441;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+h1{
+    color: #5E8B4A;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+section p{
+    font-size: 22px;
+    line-height: 1.8;
+    color: #4A2C24;
+    margin-bottom: 15px;
+}
+
+button{
+    background-color: #D9A441;
+    color: #4A2C24;
+    border: none;
+    padding: 18px 35px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: #5E8B4A;
+    color: white;
+    transform: scale(1.05);
+}
+
+hr{
+    border: none;
+    height: 3px;
+    background-color: #D9A441;
+}
+
+.indexFooter{
+    background-color: #4A2C24;
+    color: #E9CDA0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.footerLeft p{
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.footerRight{
+    display: flex;
+    gap: 15px;
+}
+
+.footerRight img{
+    width: 35px;
+    transition: 0.3s;
+}
+
+.footerRight img:hover{
+    transform: scale(1.15);
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+    h1{
+        font-size: 32px;
+    }
+
+    section{
+        padding: 35px 25px;
+    }
+
+    section p{
+        font-size: 18px;
+    }
+
+    .headerMenuNavegacao{
+        gap: 15px;
+    }
+
+    .indexFooter{
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+}

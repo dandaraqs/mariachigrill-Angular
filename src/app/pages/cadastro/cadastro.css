@@ -1,0 +1,99 @@
+body {
+    background-color: #e9cda0;
+    background-image: url(../../../assets/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: georgia, serif;
+}
+
+h1 {
+    color: #c84620;
+    font-size: 2.5rem;
+}
+
+#imageDecoracao {
+    width: 160px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#sectionCadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+    justify-content: center;    
+    width: 100%;                
+    min-height: 100vh;     
+    box-sizing: border-box;
+    padding: 40px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px; 
+    gap: 15px;               
+}
+
+label {
+    text-align: left;        
+    font-weight: bold;       
+    margin-bottom: -5px;     
+    color: #333;             
+}
+
+input {
+    width: 100%;             
+    padding: 12px;           
+    border: 1px solid #ccc;
+    border-radius: 8px;      
+    box-sizing: border-box;  
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #c84620;
+    outline: none; 
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #c84620; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease; transform: 0.3s ease;
+}
+
+button:active {
+    background: #8f2b0d;
+    transform: scale(0.95);
+}
+
+p {
+  font-weight: bold;  
+}
+
+a {
+    color: #5e8b4a;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; 
+    }
+    
+    #sectionCadastro {
+        padding: 20px 15px; 
+    }
+    
+    #imageDecoracao {
+        width: 90px; 
+    }
+}

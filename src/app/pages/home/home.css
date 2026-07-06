@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+    background-image: url(../../../assets/images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+mark {
+    background-color: #c65d3b;
+    color: #e9cda0;
+}
+
+/* BANNER */
+
+#bannerPrincipal {
+    height: 400px;
+
+    background-image: url(../../../assets/images/homenovo.png);
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 50px;
+}
+
+/* TEXTO BANNER */
+
+#bannerTexto h1 {
+    font-size: 50px;
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, serif;
+}
+
+#bannerTexto h3 {
+    font-size: 22px;
+    color: #d9a441;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+#bannerBotoes {
+    display: flex;
+    gap: 15px;
+}
+
+/* BOTAO RESERVA */
+
+#btnReserva {
+    background-color: #c65d3b;
+    color: white;
+
+    border: 2px solid #c65d3b;
+
+    padding: 10px 30px;
+    border-radius: 10px;
+
+    font-weight: 400;
+
+    transition: 0.3s;
+}
+
+/* BOTAO CARDAPIO */
+
+#btnCardapio {
+    background-color: #d9a441;
+    color: #4a2c24;
+
+    border: 2px solid #d9a441;
+
+    padding: 10px 30px;
+    border-radius: 10px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+#btnReserva:hover {
+    transform: scale(1.05);
+}
+
+#btnCardapio:hover {
+    transform: scale(1.05);
+}
+
+/* BLOCOS */
+
+.blocosInformacoes {
+    width: 92%;
+
+    margin: 35px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(260px, 1fr));
+
+    gap: 18px;
+}
+
+/* BLOCO INDIVIDUAL */
+
+/* CARDS */
+
+.blocosInformacoes article,
+.blocosInformacoes section {
+
+    background-color: #e9cda0;
+
+    padding: 22px 20px;
+
+    border-radius: 10px;
+
+    min-height: 500px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* TÍTULOS */
+
+.blocosInformacoes h4 {
+    color: #4a2c24;
+
+    font-size: 24px;
+
+    font-family: Georgia, serif;
+
+    text-align: center;
+
+    margin-bottom: 14px;
+
+    line-height: 1.2;
+}
+
+/* TEXTO */
+
+.blocosInformacoes p {
+    color: #4a2c24;
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    text-align: center;
+
+    max-width: 250px;
+
+    margin: 0 auto 15px auto;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+/* LISTA */
+
+.blocosInformacoes ul {
+    color: #4a2c24;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    padding-left: 16px;
+
+    max-width: 250px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BOTÃO CARDÁPIO */
+
+#btnCardapioSecao,
+.blocosInformacoes summary {
+    background-color: #5e8b4a;
+    color: white;
+
+    border: 2px solid #5e8b4a;
+
+    padding: 10px 30px;
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+.blocosInformacoes summary {
+    margin-top: 20px;
+
+    background-color: #5e8b4a;
+
+    color: white;
+
+    padding: 10px 30px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    list-style: none;
+}
+
+/* DESTAQUES */
+
+#sectionDestaquesCard {
+    width: 90%;
+    margin: 60px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+/* TÍTULO CARD */
+
+#sectionDestaquesCard h4 {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    font-size: 50px;
+
+    font-family: Georgia, serif;
+
+    color: #4a2c24;
+
+    margin-bottom: 10px;
+}
+
+/* CARD */
+
+.card-destaque {
+    background-color: #f5deb9;
+
+    border-radius: 12px;
+
+    border: 1px solid #d9a441;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.card-destaque:hover {
+    transform: scale(1.05);
+}
+
+.card-destaque img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* LEGENDA */
+
+.card-destaque figcaption {
+    text-align: center;
+
+    padding: 15px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #d9a441;
+}
+
+/* LINK */
+
+.card-destaque a {
+    text-decoration: none;
+}
+
+/* AVALIAÇÕES */
+
+#sectionAvaliacoes {
+    width: 90%;
+
+    margin: 60px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+#sectionAvaliacoes details {
+    background-color: #f5deb9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #d9a441;
+
+    display: block;
+}
+
+#sectionAvaliacoes summary {
+    color: #4a2c24;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 10px;
+}
+
+#sectionAvaliacoes p {
+    color: #4a2c24;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+#tituloAvaliacoes {
+    color: #4a2c24;
+
+    font-size: 50px;
+
+    text-align: center;
+
+    font-family: Georgia;
+
+    margin-top: 50px;
+
+    margin-bottom: 30px;
+}
+
+/* CONTATO */
+
+#secaoContato {
+    width: 90%;
+
+    margin: 60px auto;
+
+    background-color: #f5deb9;
+
+    border: 1px solid #d9a441;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 40px;
+}
+
+.contatoBox h3,
+.contatoBox h4 {
+    color: #4a2c24;
+
+    margin-bottom: 15px;
+}
+
+.contatoBox h3 {
+    font-size: 32px;
+}
+
+.contatoBox p {
+    color: #4a2c24;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+/* RESPONSIVIDADE CELULAR */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 12px 5%;
+
+        gap: 10px;
+    }
+
+    .headerLogo {
+        transform: scale(0.85);
+    }
+
+    .headerMenuNavegacao {
+        gap: 14px;
+    }
+
+    .headerMenuNavegacao a {
+        font-size: 13px;
+    }
+
+    #linkCadastro {
+        padding: 10px 18px;
+
+        font-size: 14px;
+    }
+
+    /* BANNER */
+
+    #bannerPrincipal {
+        padding-top: 220px;
+    }
+
+    #bannerTexto h1 {
+        font-size: 30px;
+    }
+
+    #bannerTexto h3 {
+        font-size: 18px;
+    }
+
+    #bannerBotoes {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 12px;
+    }
+
+    #btnReserva,
+    #btnCardapio {
+        width: 200px;
+    }
+
+    /* BLOCOS */
+
+    .blocosInformacoes {
+        grid-template-columns: 1fr;
+
+        width: 90%;
+    }
+
+    .blocosInformacoes article,
+    .blocosInformacoes section {
+        min-height: auto;
+
+        padding: 20px;
+    }
+
+    .blocosInformacoes h4 {
+        font-size: 22px;
+    }
+
+    .blocosInformacoes p,
+    .blocosInformacoes ul {
+        font-size: 14px;
+    }
+
+    /* DESTAQUES */
+
+    #sectionDestaquesCard {
+        grid-template-columns: 1fr;
+    }
+
+    #sectionDestaquesCard h4 {
+        font-size: 36px;
+    }
+
+    .card-destaque img {
+        height: 220px;
+    }
+
+    /* AVALIAÇÕES */
+
+    #sectionAvaliacoes {
+        grid-template-columns: 1fr;
+    }
+
+    #tituloAvaliacoes {
+        font-size: 36px;
+    }
+
+    /* CONTATOS */
+
+    #secaoContato {
+        grid-template-columns: 1fr;
+
+        padding: 25px;
+
+        gap: 30px;
+    }
+
+    .contatoBox h3 {
+        font-size: 28px;
+    }
+
+}
