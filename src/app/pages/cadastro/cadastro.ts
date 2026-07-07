@@ -6,7 +6,26 @@ import {
   FormGroup,
   ReactiveFormsModule,
   Validators,
+  AbstractControl,
+  ValidationErrors,
+  ValidatorFn
 } from "@angular/forms";
+
+const senhasIguaisValidator: ValidatorFn = (
+  form: AbstractControl
+): ValidationErrors | null => {
+
+  const senha = form.get('senha')?.value;
+  const confiraSenha = form.get('confiraSenha')?.value;
+
+  if (senha === confiraSenha) {
+    return null;
+  }
+
+  return {
+    senhasDiferentes: true
+  };
+};
 
 @Component({
   selector: 'app-cadastro',
@@ -14,7 +33,6 @@ import {
   templateUrl: './cadastro.html',
   styleUrl: './cadastro.css',
 })
-
 
 export class Cadastro 
 {
