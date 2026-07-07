@@ -2,7 +2,7 @@
         <section id="sectionCadastro">
             <h1>CRIE SUA CONTA</h1>
             <img src="./assets/images/decoracao.png" alt="Decoração de flor em cor verde" id="imageDecoracao">
-            <form method="post" name="formCadastro" [formGroup]="formCadastro" (ngSubmit)="submitForm()">
+            <form method="post" name="formCadastro" [formGroup]="formCadastro">
                 <label class="campo" for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Dandara De Quintela Perez" required formControlName="nome">
                 <label class="campo" for="email">E-mail:</label>
