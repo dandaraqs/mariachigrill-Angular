@@ -2,19 +2,19 @@
         <section id="sectionCadastro">
             <h1>CRIE SUA CONTA</h1>
             <img src="./assets/images/decoracao.png" alt="Decoração de flor em cor verde" id="imageDecoracao">
-            <form method="post">
+            <form method="post" name="formCadastro" [formGroup]="formCadastro" (ngSubmit)="submitForm()">
                 <label class="campo" for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Dandara De Quintela Perez" required>
+                <input type="text" id="nome" name="nome" placeholder="Dandara De Quintela Perez" required formControlName="nome">
                 <label class="campo" for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="@dandaradequintela" required>
+                <input type="email" id="email" name="email" placeholder="@dandaradequintela" required formControlName="email">
                 <label class="campo" for="numero">Número de Telefone:</label>
-                <input type="tel" id="numero" name="numero" placeholder="(99) 99999-9999" required>
+                <input type="tel" id="numero" name="numero" placeholder="(99) 99999-9999" required formControlName="numero"> 
                 <label class="campo" for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" placeholder="qwe123!@#" required>
+                <input type="password" id="senha" name="senha" placeholder="qwe123!@#" required formControlName="senha">
                 <label class="campo" for="confiraSenha">Confira sua senha:</label>
-                <input type="password" id="confiraSenha" name="confiraSenha" placeholder="qwe123!@#" required>
+                <input type="password" id="confiraSenha" name="confiraSenha" placeholder="qwe123!@#" required formControlName="confiraSenha">
 
-                <button type="submit">Cadastrar</button>
+                <button type="submit" [disabled] = "!mostrarBotao">Cadastrar</button>
             </form>
 
             <p><small>Já tem conta? <a routerLink="/Home">Entrar</a></small></p>
