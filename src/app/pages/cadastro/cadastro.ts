@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Form } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { RouterLink, Router } from '@angular/router';
 import {
   FormControl,
   FormGroup,
@@ -18,8 +18,6 @@ import {
 
 export class Cadastro 
 {
-  submitted = false;
-
   formCadastro = new FormGroup({
     nome: new FormControl("", [Validators.required, Validators.minLength(3)]),
     email: new FormControl("", [Validators.required, Validators.email]),
@@ -28,11 +26,14 @@ export class Cadastro
     confiraSenha: new FormControl("", [Validators.required, Validators.minLength(8)]),
   });
 
+  constructor(private router: Router) {}
+
   submitForm(): void {
-    console.log(this.formCadastro)
+  
     if (this.formCadastro.valid) {
-      this.submitted = true;
+      console.log(this.formCadastro);
       this.formCadastro.reset();
+      this.router.navigate(['/'])
     } else {
       this.formCadastro.markAllAsTouched();
     }

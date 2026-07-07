@@ -14,7 +14,7 @@
                 <label class="campo" for="confiraSenha">Confira sua senha:</label>
                 <input type="password" id="confiraSenha" name="confiraSenha" placeholder="qwe123!@#" required formControlName="confiraSenha">
 
-                <button type="submit" [disabled] = "!mostrarBotao(formCadastro)">Cadastrar</button>
+                <button type="submit" [disabled] = "formCadastro.invalid">Cadastrar</button>
             </form>
 
             <p><small>Já tem conta? <a routerLink="/Home">Entrar</a></small></p>
