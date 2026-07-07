@@ -13,6 +13,14 @@
                 <input type="password" id="senha" name="senha" placeholder="qwe123!@#" required formControlName="senha">
                 <label class="campo" for="confiraSenha">Confira sua senha:</label>
                 <input type="password" id="confiraSenha" name="confiraSenha" placeholder="qwe123!@#" required formControlName="confiraSenha">
+                @if (
+                        formCadastro.hasError('senhasDiferentes') &&
+                        formCadastro.get('confiraSenha')?.touched
+                    ) {
+                        <small class="erro">
+                            As senhas não coincidem.
+                        </small>
+                    }
 
                 <button type="submit" [disabled] = "!mostrarBotao(formCadastro)">Cadastrar</button>
             </form>
